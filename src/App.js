@@ -38,7 +38,7 @@ class App extends Component {
     this.setState({ posts });
 
     try {
-      const url = config.apiEndpoint + '/' + post.id;
+      const url = 's' + config.apiEndpoint + '/' + post.id;
       await http.delete(url);
     }
     catch (ex) {

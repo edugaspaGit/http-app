@@ -5,8 +5,10 @@
   "dependencies": {
     "@sentry/browser": "^7.61.0",
     "@sentry/react": "^7.61.0",
+    "@sentry/tracing": "^7.61.0",
     "axios": "^0.18.1",
     "bootstrap": "^4.1.2",
+    "raven-js": "^3.26.4",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-scripts": "1.1.4",
@@ -18,5 +20,11 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "sentry:sourcemaps": "sentry-cli sourcemaps inject --org edugaspa --project http-app  && sentry-cli sourcemaps upload --org edugaspa --project http-app "
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.9",
+    "@babel/plugin-proposal-object-rest-spread": "^7.20.7",
+    "@babel/preset-env": "^7.22.9",
+    "@babel/preset-react": "^7.22.5"
   }
 }
